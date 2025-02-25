@@ -1,0 +1,435 @@
+/* Import Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@400;700&display=swap');
+
+/* Global font styling */
+body {
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+/* Main Home Section */
+.home {
+    background-color: white;
+    padding: 4rem 2rem;
+}
+
+/* Wrapper for all content */
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+
+/* Text Content */
+.home-content {
+    max-width: 50%;
+    padding-right: 2rem;
+}
+
+.home-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 1.5rem;
+    font-family: 'Noto Sans Thai', sans-serif;
+    position: relative;
+}
+
+.home-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 2.5rem;
+    line-height: 1.8;
+    max-width: 600px;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+
+/* Highlighted Text Animation */
+.home-title .highlight {
+    color: #3498db;
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+}
+
+/* Animated underline effect */
+.home-title .highlight::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px; /* Distance from the text */
+    width: 100%;
+    height: 8px; /* Thickness of the scribble */
+    background-color: #3498db;
+    z-index: -1;
+    border-radius: 2px;
+    transform: scaleX(0); /* Start from invisible */
+    transform-origin: left;
+    animation: scribble 0.8s ease forwards; /* Scribbling effect */
+}
+
+/* Scribble Animation */
+@keyframes scribble {
+    0% {
+        transform: scaleX(0); /* Start with no underline */
+    }
+    100% {
+        transform: scaleX(1); /* Fully stretched underline */
+    }
+}
+
+/* Button Styles */
+.home-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+}
+
+/* Solid Button */
+.btn-solid {
+    background-color: #3498db;
+    color: white;
+    border: none;
+}
+
+.btn-solid:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Outline Button */
+.btn-outline {
+    background-color: transparent;
+    color: #3498db;
+    border: 2px solid #3498db;
+}
+
+.btn-outline:hover {
+    background-color: #3498db;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Image Styling */
+.home-image-container {
+    max-width: 40%;
+    margin-left: 2rem;
+}
+
+.home-image {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .home-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+    }
+
+    .home-image-container {
+        max-width: 100%;
+    }
+
+    .home-title {
+        font-size: 2.5rem;
+    }
+
+    .home-description {
+        font-size: 1rem;
+    }
+
+    .home-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+/* About Section */
+.about-section {
+    background-color: white;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start; /* Align content and image at the top */
+    gap: 2rem;
+}
+
+/* Content on the left */
+.about-content {
+    flex: 1;
+    max-width: 50%;
+    text-align: left;
+    padding-right: 2rem;
+}
+
+.about-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.about-content p {
+    font-size: 1.2rem;
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 2rem;
+}
+
+/* Stats grid */
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Two columns */
+    gap: 2rem; /* Spacing between stat items */
+}
+
+.stat-item {
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2rem;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.stat-item p {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Image on the right */
+.about-image-container {
+    flex: 1;
+    max-width: 40%;
+}
+
+.about-image {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .about-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-content {
+        max-width: 100%;
+        margin-bottom: 2rem;
+        padding-right: 0;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr; /* Single column on smaller screens */
+    }
+
+    .about-image-container {
+        max-width: 100%;
+    }
+}
+/* Technologies Section */
+.technologies-section {
+    padding: 4rem 2rem;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.technologies-section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.technologies-section p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.6;
+}
+
+.technologies-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.technology-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: left;
+}
+
+.technology-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.technology-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.technology-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.technology-card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.technology-card .btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #3498db;
+    border: 1px solid #3498db;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.technology-card .btn:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .technologies-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .technology-card {
+        max-width: 90%;
+    }
+}
+.projects-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background-color: #f9f9f9;
+  }
+  
+  .projects-title {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .projects-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexibly create columns */
+    gap: 2rem;
+    padding: 1rem;
+  }
+  
+  .project-card {
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .project-image img {
+    width: 100%;
+    height: 230px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
+  .project-details {
+    padding: 1.5rem;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  
+  .project-title {
+    font-size: 1.8rem;
+    margin: 1rem 0;
+    font-weight: bold;
+  }
+  
+  .project-description {
+    font-size: 1.1rem;
+    color: #666;
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+  }
+  
+  .btn-solid {
+    display: inline-block;
+    padding: 0.5rem 1rem; /* Reduced padding */
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    transition: background-color 0.3s ease;
+    font-size: 0.9rem; /* Reduced font size */
+  }
+  
+  .btn-solid:hover {
+    background-color: #0056b3;
+  }
+  

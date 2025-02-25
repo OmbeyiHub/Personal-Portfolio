@@ -1,0 +1,112 @@
+/* Reset */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    padding: 30px 0;
+    border-bottom: 1px solid #e0e0e0;
+    font-family: 'Arial', sans-serif;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+.navbar-logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    font-family: 'Orbitron', sans-serif;
+
+}
+
+.navbar-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar-link {
+    font-size: 1rem;
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.navbar-link:hover {
+    color: #3498db;
+}
+
+.navbar-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.btn-outline {
+    padding: 8px 16px;
+    border: 2px solid #3498db;
+    color: #3498db;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline:hover {
+    background-color: #3498db;
+    color: white;
+}
+
+.btn-solid {
+    padding: 8px 16px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-solid:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        margin: 10px 0;
+    }
+
+    .navbar-actions {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

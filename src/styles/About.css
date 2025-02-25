@@ -1,0 +1,143 @@
+.about {
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+.about-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.about-header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #111;
+}
+
+.about-header p {
+    font-size: 1.2rem;
+    color: #555;
+    margin: 0 auto;
+    max-width: 800px;
+}
+
+.about-content {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.summary-section, .skills-section, .achievements-section, .contact-section {
+    margin-bottom: 2rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1.5rem;
+}
+
+.skill-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.skill-card:hover {
+    transform: translateY(-10px) scale(1.05); /* Scale the card up */
+    z-index: 10; /* Bring the hovered card above the others */
+}
+
+
+.skill-card img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+.skill-card h3 {
+    font-size: 1.2rem;
+    color: #222;
+    margin-bottom: 0.5rem;
+}
+
+.skill-card p {
+    font-size: 1rem;
+    color: #555;
+}
+
+.achievements-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+.achievement-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+}
+
+.achievement-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.achievement-card h3 {
+    font-size: 1.5rem;
+    margin: 1rem 1rem 0.5rem;
+    color: #111;
+}
+
+.achievement-card p {
+    font-size: 1rem;
+    margin: 0 1rem 1rem;
+    color: #555;
+}
+
+.contact-section {
+    text-align: center;
+    padding: 2rem;
+    background: white;
+    color: black;
+    border-radius: 8px;
+}
+
+.contact-section h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-section p {
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.contact-btn {
+    background-color: #fff;
+    color: #007bff;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-btn:hover {
+    background-color: #f0f0f0;
+}
