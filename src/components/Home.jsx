@@ -52,7 +52,7 @@ const Home = () => {
                     </div>
                 </div>
                 <div className="about-image-container">
-                    <img src="/images/pic1.avif" alt="Brenda" className="about-image" />
+                    <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8dGVjaCUyMGxhZHl8ZW58MHx8MHx8fDA%3D" alt="Brenda" className="about-image" />
                 </div>
             </div>
 
@@ -73,7 +73,7 @@ const Home = () => {
                             <p className="project-description">
                                 A platform connecting users, enhancing user experience.
                             </p>
-                           {/* <a href="#" className="btn btn-solid" target="_blank" rel="noopener noreferrer">View on GitHub</a>*/}
+                            <a href="https://github.com/OmbeyiHub/DigitalFest-Events" className="btn btn-solid" target="_blank" rel="noopener noreferrer">View on GitHub</a>
                         </div>
                     </div>
 
@@ -99,7 +99,7 @@ const Home = () => {
                             <p className="project-description">
                                 Showcases my work and growth as a developer.
                             </p>
-                            {/*<a href="#" className="btn btn-solid">View on GitHub</a>*/}
+                            <a href="https://github.com/OmbeyiHub/Personal-Portfolio" className="btn btn-solid">View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -113,7 +113,7 @@ const Home = () => {
                 </p>
                 <div className="technologies-cards">
                     <div className="technology-card" data-aos="fade-right">
-                        <img src="images/pic6.avif" alt="Front-End Development" />
+                        <img src="https://images.pexels.com/photos/1591061/pexels-photo-1591061.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Front-End Development" />
                         <h3>Front-End Development Expertise</h3>
                         <p>
                             Skilled in HTML, CSS, and JavaScript for seamless user experiences.
@@ -121,7 +121,7 @@ const Home = () => {
                         <a href="/skills" className="btn btn-outline">Learn More</a>
                     </div>
                     <div className="technology-card" data-aos="fade-left">
-                        <img src="images/pic7.avif" alt="React and Python" />
+                        <img src="https://images.pexels.com/photos/11035474/pexels-photo-11035474.jpeg?auto=compress&cs=tinysrgb&w=400" alt="React and Python" />
                         <h3>React and Python Proficiency</h3>
                         <p>
                             Strong command of React and Python for robust applications.
@@ -129,7 +129,7 @@ const Home = () => {
                         <a href="/skills" className="btn btn-outline">Learn More</a>
                     </div>
                     <div className="technology-card" data-aos="fade-up">
-                        <img src="images/pic8.jpeg" alt="Flask for Back-End Solutions" />
+                        <img src="" alt="Flask for Back-End Solutions" />
                         <h3>Flask for Back-End Solutions</h3>
                         <p>
                             Uses Flask for secure and reliable server-side operations.

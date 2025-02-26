@@ -13,8 +13,8 @@ const Projects = () => {
             title: "Portfolio Website",
             description:
                 "A personal portfolio website built with React. It showcases my work, skills, and experience.",
-            image: "images/pic4.png",
-            link: "",
+            image: "https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8cG9ydGZvbGlvJTIwd2Vic2l0ZXxlbnwwfHwwfHx8MA%3D%3D",
+            link: "https://personal-portfolio-kappa-one-99.vercel.app/",
         },
         {
             title: "Utalii ",
@@ -27,8 +27,8 @@ const Projects = () => {
             title: "Digital Fest Events",
             description:
                 "This app allows you to book ,search events according to desired events",
-            image: "https://images.unsplash.com/photo-1458748600212-a4c65493cbfd?w=400&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8ZGlnaXRhbCUyMGV2ZW50c3xlbnwwfHwwfHx8MA%3D%3D",
-            link: "",
+            image: "https://plus.unsplash.com/premium_photo-1661369734218-2156512875c6?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            link: "https://vercel.com/brenda-akinyi-ombeyis-projects/digital-fest-events",
         }
         
         

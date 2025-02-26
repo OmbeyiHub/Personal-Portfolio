@@ -8,25 +8,25 @@ const skillsData = [
     title: 'Mastering HTML Structure',
     description:
       ' strong foundation in HTML, enabling to create well-structured and semantic web pages.',
-    imgSrc: 'images/pic9.png',
+    imgSrc: 'https://images.pexels.com/photos/11035371/pexels-photo-11035371.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1',
   },
   {
     title: 'Expert in CSS Design',
     description:
       'With CSS,  crafts visually appealing and responsive designs, enhancing user experience across devices.',
-    imgSrc: 'images/pic10.png',
+    imgSrc: 'https://images.pexels.com/photos/11035386/pexels-photo-11035386.jpeg?auto=compress&cs=tinysrgb&w=400',
   },
   {
     title: 'JavaScript for Interactivity',
     description:
       'I utilize JavaScript to add dynamic features and interactivity, making web applications more engaging.',
-    imgSrc: 'images/pic11.png',
+    imgSrc: 'https://media.istockphoto.com/id/1413514720/photo/stylized-3d-javascript-icon-design.jpg?b=1&s=612x612&w=0&k=20&c=UQtBuY5qMsHHkNFaRVEhJDcRdEGLJUOes9kaT7NdChY=',
   },
   {
     title: 'Proficient in React Development',
     description:
       'I build efficient and scalable web applications using React, focusing on component-based architecture.',
-    imgSrc: 'images/pic12.png',
+    imgSrc: 'https://images.pexels.com/photos/11035471/pexels-photo-11035471.jpeg?auto=compress&cs=tinysrgb&w=400',
   },
 ];
 
